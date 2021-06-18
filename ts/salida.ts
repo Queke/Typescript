@@ -17,8 +17,35 @@ StringArray = [true,2,2]             // se puede reasignar cualquier tipo de dat
 var StringNum: number[]=[1,2,3]      // 
 
 
-//tupls
-var strNumTUple: [string, number]
+//tupls                              // array estructuaro
+var strNumTUple: [string, number]  
 strNumTUple = ["Hola",22]
 
-document.write(strNumTUple + "")
+ // const pi = 3.1415 
+
+let myVoid: any = undefined
+let myNull: any = null
+
+const cont = 0
+
+//function
+
+function suma (num1:number,num2:number){    //Lo que se está realizando aquí es una suma donde
+    return num1 + num2                      // explicitamente se solicitan 2 numeros de entrada
+}
+let myuSum = function (num1,num2){
+    return
+}
+
+function getName(name:string,apellido?:string):string { // lo que se está realizando es asignar a name -> explicitamente string // siendo el segundo parametro opcional
+                                                       // además de que la concatenación dará como resultado otro String -> explicitamente 
+
+    if(apellido == undefined){
+        return name
+    }
+    return `${name} ${apellido}`                       // Sintaxis para mostrar los datos equivalente a --> name  ' ' + apellido <--
+}
+
+
+
+document.write(getName("nicolás"))
